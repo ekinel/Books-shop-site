@@ -19,13 +19,21 @@ p{
     margin: 8px 0;
 }
 
-h2{
-    font-size: 18px;
+h2, h3{
     font-weight: bold;
     color: #090909;
     text-transform: uppercase;
+}
+
+h2{
+    font-size: 18px;
     background: url(../images/arrow.png) no-repeat 0 9px;
     margin-bottom: 18px;
+}
+
+h3{
+    font-size: 12px;
+    margin-bottom: 20px;
 }
 
 #top-line {
@@ -106,7 +114,7 @@ h2{
     line-height: 1.3;
 }
 
-#content-box-3{
+#content-box-3, #portfolio-image-4{
     margin-right: 0px;
 }
 
@@ -123,11 +131,102 @@ h2{
 
 #portfolio{
     margin-top: 20px;
+    padding-bottom: 33px;
+    border-bottom:1px solid #C0C0C0;
+    overflow: hidden;
 }
 
 .portfolio-image{
     width: 215px;
     height: 135px;
     float: left;
-    margin-right: 34px;
+    margin-right: 33px;
+    position: relative;
+}
+
+.portfolio-image a{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: #090909;
+    display: block;
+    background-color: #E62E6B;
+    padding: 4px 10px;
+    line-height: 1;
+}
+
+.portfolio-image a:hover{
+    color: #f4f4f4ce;
+}
+
+#bottom-row{
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+#blog{
+    width: 670px;
+    float: left;
+}
+
+#social{
+    width: 220px;
+    float: right;
+}
+
+#social ul{
+    padding-left: 0px;
+}
+#social ul li{
+    list-style-type: none;
+    float: left;
+    margin-right: 12px;
+}
+
+#footer{
+    background: #e2e2e2;
+    padding: 32px 0 36px 0;
+    float: left;
+    width: 960px;
+}
+
+#footer-content{
+    /*margin: 0 auto;*/
+    margin-left: 100px;
+}
+
+#footer-content ul{
+    overflow: hidden;
+}
+
+#footer-content ul li{
+    list-style-type: none;
+    float: left;
+    padding: 0 7px;
+    border-left: 1px solid #5d5d5d;
+    line-height: 1;
+}
+
+#footer-content ul li:first-child{
+    padding-left:0;
+    border: none;
+}
+
+#footer-content a{
+    color: #5d5d5d;
+    font-weight: normal;
+    text-transform: capitalize;
+}
+
+#footer-content a:hover{
+    text-decoration: underline;
+}
+
+#footer-content p{
+    margin: 5px 0 0 0;
+    margin-left: 40px;
+}
+
+.clear{
+    clear: both;
 }
